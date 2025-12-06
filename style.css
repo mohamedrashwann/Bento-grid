@@ -1,0 +1,309 @@
+/*
+* Front-end Style Guide
+*
+* Colors:
+* - Purple 100: hsl(254, 88%, 90%)
+* - Purple 500: hsl(256, 67%, 59%)
+* - Yellow 100: hsl(31, 66%, 93%)
+* - Yellow 500: hsl(39, 100%, 71%)
+* - White: hsl(0, 0%, 100%)
+* - Black: hsl(0, 0%, 7%)
+*
+* Typography:
+* - Font Family: DM Sans (Weights: 400, 500)
+* - Body Font Size: 18px
+*/
+
+/* 1. Font Face */
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 400 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. Global Styles and Variables */
+:root {
+    /* Colors */
+    --color-purple-100: hsl(254, 88%, 90%);
+    --color-purple-500: hsl(256, 67%, 59%);
+    --color-yellow-100: hsl(31, 66%, 93%);
+    --color-yellow-500: hsl(39, 100%, 71%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 7%);
+
+    /* Typography */
+    --font-family-primary: 'DM Sans', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-size-body: 18px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+/* 3. Main Layout (Bento Grid) */
+.bento-grid-container {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: var(--color-white);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Item Specific Styles */
+
+/* Item 1: Create and schedule content quicker */
+.item-1 {
+    background-color: var(--color-yellow-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-1 h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: var(--font-weight-medium);
+}
+.item-1 .highlight {
+    color: var(--color-purple-500);
+}
+.item-1 .btn-create {
+    background-color: var(--color-yellow-500);
+    color: var(--color-black);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+.item-1 .illustration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+}
+
+/* Item 2: Social Media 10x Faster with AI */
+.item-2 {
+    background-color: var(--color-purple-500);
+    color: var(--color-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-2 h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 1rem;
+}
+.item-2 .stars {
+    font-size: 2rem;
+    color: var(--color-yellow-500);
+    margin-bottom: 0.5rem;
+}
+.item-2 p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Item 3: Schedule to social media */
+.item-3 {
+    background-color: var(--color-purple-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-3 h2 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 1rem;
+}
+.item-3 .chart-area {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 1rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+.item-3 p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Item 4: Write your content using AI */
+.item-4 {
+    background-color: var(--color-yellow-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-4 h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-black);
+}
+.item-4 .chat-bubble {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+/* Item 5: Manage multiple accounts and platforms */
+.item-5 {
+    background-color: var(--color-yellow-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-5 h2 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    margin-top: 1rem;
+}
+.item-5 .platform-icons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Item 6: Maintain a consistent posting schedule */
+.item-6 {
+    background-color: var(--color-yellow-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-6 h2 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+}
+.item-6 .schedule-area {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Item 7: Grow followers with non-stop content */
+.item-7 {
+    background-color: var(--color-purple-500);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-7 h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: var(--font-weight-medium);
+}
+.item-7 .growth-chart {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Item 8: >56% faster audience growth */
+.item-8 {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-8 h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: var(--font-weight-medium);
+}
+.item-8 .avatars {
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* 4. Desktop Layout (Min-width: 1024px) */
+@media (min-width: 1024px) {
+    .bento-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        gap: 1.5rem;
+    }
+
+    .item-1 { grid-area: 1 / 1 / 3 / 2; }
+    .item-2 { grid-area: 1 / 2 / 2 / 4; }
+    .item-3 { grid-area: 1 / 4 / 3 / 5; }
+    .item-5 { grid-area: 2 / 2 / 3 / 3; }
+    .item-6 { grid-area: 2 / 3 / 3 / 5; }
+    .item-4 { grid-area: 3 / 1 / 4 / 2; }
+    .item-8 { grid-area: 3 / 2 / 4 / 3; }
+    .item-7 { grid-area: 3 / 3 / 4 / 5; }
+}
+
+/* 5. Mobile Layout (Max-width: 1023px) */
+@media (max-width: 1023px) {
+    .bento-grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    /* The two components in the left column on desktop (Item 1 and Item 4)
+       are placed at the bottom on mobile. */
+    .item-1 { order: 10; }
+    .item-4 { order: 11; }
+}
+
+/* 6. Attribution */
+.attribution {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-black);
+}
+.attribution a {
+    color: var(--color-purple-500);
+    text-decoration: none;
+}
