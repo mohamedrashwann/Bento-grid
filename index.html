@@ -2,148 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  
   <title>Frontend Mentor | Bento grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
 <body>
-  <main class="bento-grid-container">
-    <!-- Item 1: Create and schedule content quicker -->
-    <section class="grid-item item-1">
-      <div>
-        <h2>Create and schedule content <span class="highlight">quicker.</span></h2>
-        <a href="#" class="btn-create">
-          <span>Create Post</span>
-          <span>➤</span>
-        </a>
-      </div>
-      <img src="./assets/images/illustration-create-post.webp" alt="Create Post Illustration" class="illustration">
-    </section>
 
-    <!-- Item 2: Social Media 10x Faster with AI -->
-    <section class="grid-item item-2">
-      <h1>Social Media <span style="color: hsl(39, 100%, 71%);">10x</span>  
-      <em>Faster with AI</em></h1>
-      <div class="stars">★ ★ ★ ★ ★</div>
-      <p>Over 4,000 5-star reviews</p>
-    </section>
+  Social Media 10x Faster with AI
+  Over 4,000 5-star reviews
 
-    <!-- Item 3: Schedule to social media -->
-    <section class="grid-item item-3">
-      <h2>Schedule to social media.</h2>
-      <div class="chart-area">
-        <div class="time-selector">
-          <button class="day-btn active">Mon</button>
-          <button class="day-btn">Tue</button>
-          <button class="day-btn">Wed</button>
-          <button class="day-btn">Thu</button>
-        </div>
-        <div class="chart-container">
-          <p style="color: var(--color-purple-500); font-weight: 500; margin-bottom: 0.5rem;">Most Active</p>
-          <svg viewBox="0 0 200 100" style="width: 100%; height: 80px;">
-            <!-- Bar chart bars -->
-            <rect x="20" y="60" width="20" height="40" fill="hsl(256, 67%, 59%)" rx="4"/>
-            <rect x="50" y="40" width="20" height="60" fill="hsl(256, 67%, 59%)" rx="4"/>
-            <rect x="80" y="20" width="20" height="80" fill="hsl(256, 67%, 59%)" rx="4"/>
-            <rect x="110" y="50" width="20" height="50" fill="hsl(256, 67%, 59%)" rx="4"/>
-            <rect x="140" y="60" width="20" height="40" fill="hsl(256, 67%, 59%)" rx="4"/>
-            <!-- X-axis labels -->
-            <text x="30" y="95" font-size="10" text-anchor="middle">12a</text>
-            <text x="60" y="95" font-size="10" text-anchor="middle">3a</text>
-            <text x="90" y="95" font-size="10" text-anchor="middle">6a</text>
-            <text x="120" y="95" font-size="10" text-anchor="middle">9a</text>
-            <text x="150" y="95" font-size="10" text-anchor="middle">12p</text>
-          </svg>
-        </div>
-      </div>
-      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
-    </section>
+  Manage multiple accounts and platforms.
 
-    <!-- Item 4: Write your content using AI -->
-    <section class="grid-item item-4">
-      <h2>Write your content using AI.</h2>
-      <div class="chat-bubble">
-        <p><strong>Give me 5 tips to grow my follower on Insta</strong></p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">Certainly! Here are five tips to help you grow your Instagram...</p>
-        <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-          <img src="./assets/images/illustration-ai-content.webp" alt="AI Content" style="width: 30px; height: 30px; border-radius: 50%;">
-        </div>
-      </div>
-    </section>
+  Maintain a consistent posting schedule.
 
-    <!-- Item 5: Manage multiple accounts and platforms -->
-    <section class="grid-item item-5">
-      <div class="platform-icons">
-        <span style="background-color: hsl(39, 100%, 71%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">📷</span>
-        <span style="background-color: hsl(39, 100%, 71%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">𝕏</span>
-        <span style="background-color: hsl(39, 100%, 71%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">📱</span>
-      </div>
-      <h2>Manage multiple accounts and platforms.</h2>
-    </section>
+  Schedule to social media.
+  Optimize post timings to publish content at the perfect time for your audience.
+  
+  Grow followers with non-stop content.
 
-    <!-- Item 6: Maintain a consistent posting schedule -->
-    <section class="grid-item item-6">
-      <h2>Maintain a consistent posting schedule.</h2>
-      <div class="schedule-area">
-        <div style="background-color: hsl(256, 67%, 59%); color: white; padding: 0.5rem; border-radius: 0.5rem; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
-          <span style="font-weight: 500;">August 2024</span>
-          <span style="font-size: 0.9rem;">Weekly</span>
-        </div>
-        <div style="display: flex; gap: 0.5rem;">
-          <span style="width: 30px; height: 30px; background-color: hsl(256, 67%, 59%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">✓</span>
-          <span style="width: 30px; height: 30px; background-color: hsl(256, 67%, 59%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">✓</span>
-          <span style="width: 30px; height: 30px; background-color: hsl(256, 67%, 59%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">✓</span>
-          <span style="width: 30px; height: 30px; background-color: hsl(256, 67%, 59%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">✓</span>
-        </div>
-      </div>
-    </section>
+  >56% faster audience growth
+  
+  Create and schedule content quicker.
 
-    <!-- Item 7: Grow followers with non-stop content -->
-    <section class="grid-item item-7">
-      <h2>Grow followers with non-stop content.</h2>
-      <div class="growth-chart">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-          <div>
-            <p style="color: var(--color-black); font-size: 0.9rem;">Follower Growth</p>
-            <p style="color: var(--color-black); font-size: 1.5rem; font-weight: 500;">20,642</p>
-            <p style="color: hsl(120, 100%, 40%); font-size: 0.8rem;">+280%</p>
-          </div>
-          <svg viewBox="0 0 100 60" style="width: 60px; height: 60px;">
-            <!-- Small bar chart -->
-            <rect x="10" y="40" width="12" height="20" fill="hsl(256, 67%, 59%)" rx="2"/>
-            <rect x="25" y="30" width="12" height="30" fill="hsl(39, 100%, 71%)" rx="2"/>
-            <rect x="40" y="20" width="12" height="40" fill="hsl(256, 67%, 59%)" rx="2"/>
-            <rect x="55" y="35" width="12" height="25" fill="hsl(39, 100%, 71%)" rx="2"/>
-            <rect x="70" y="15" width="12" height="45" fill="hsl(256, 67%, 59%)" rx="2"/>
-          </svg>
-        </div>
-        <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 1rem 0;">
-        <div>
-          <p style="color: var(--color-black); font-size: 0.9rem;">Followers</p>
-          <p style="color: var(--color-black); font-size: 1.5rem; font-weight: 500;">89,532</p>
-          <p style="color: hsl(120, 100%, 40%); font-size: 0.8rem;">+120%</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Item 8: >56% faster audience growth -->
-    <section class="grid-item item-8">
-      <h2>
-        <span style="font-size: 2.5rem;">></span>56%
-      </h2>
-      <p>faster audience growth</p>
-      <div class="avatars" style="display: flex; gap: 0.5rem; margin-top: 1rem;">
-        <img src="./assets/images/illustration-audience-growth.webp" alt="Avatar 1" style="width: 40px; height: 40px; border-radius: 50%;">
-        <img src="./assets/images/illustration-consistent-schedule.webp" alt="Avatar 2" style="width: 40px; height: 40px; border-radius: 50%;">
-        <img src="./assets/images/illustration-grow-followers.webp" alt="Avatar 3" style="width: 40px; height: 40px; border-radius: 50%;">
-      </div>
-    </section>
-  </main>
-
+  Write your content using AI.
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#"> Mohamed Rashwan </a>.
+    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
